@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MAVEN - CUCUMBER - TESTNG" parallel="class" thread-count="4">
+    <test name="Cucumber Execution Result">             
+       <method-selectors>
+              <method-selector>
+                    <script language="beanshell"> 
+                    <![CDATA[ 
+                           groups.containsKey("TAG") 
+                    ]]>
+              </script>
+              </method-selector>
+       </method-selectors>                      
+       <packages>
+              <package name="runner.*" />
+       </packages>
+	</test>      
+</suite>
