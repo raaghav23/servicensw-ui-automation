@@ -18,8 +18,8 @@ jobs:
     steps:
       - checkout
       - run: mkdir test-reports
-      - run: chmod 777 ./Libs/chromedriverlinux[1]
-      - run: ./Libs/chromedriverlinux[1]
+      - run: chmod 777 ./Libs/chromedriverlinux
+      - run: ./Libs/chromedriverlinux
       - run:
           name: Download Selenium
           command: curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
